@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Muneeb | Portfolio Website</title>
+  <link rel="stylesheet" href="main.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+    rel="stylesheet">
+</head>
+
+<body>
+<header>
+  <script>
+    function openNav() {
+  document.getElementById("mySidebar").style.width = "250px";
+}
+
+function closeNav() {
+  document.getElementById("mySidebar").style.width = "0";
+}
+
+  </script>
+  <nav class="navbar">
+    <div class="left">Muneeb's Portfolio</div>
+    <div class="right">
+      <button class="openbtn" onclick="openNav()">☰</button>
+      <ul>
+        <li><a href="#home">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="project.html">Projects</a></li>
+        <li><a href="Contact.html">Contact</a></li>
+      </ul>
+    </div>
+  </nav>
+</header>
+
+<!-- Sidebar -->
+<div id="mySidebar" class="sidebar">
+  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">×</a>
+  <a href="#home">Home</a>
+  <a href="about.html">About</a>
+  <a href="#projects">Projects</a>
+  <a href="#contact">Contact</a>
+</div>
+
+
+  <main>
+    <section class="mainSection">
+      <div class="leftSection">
+        Hi, My name is <span class="purple">Muneeb</span>
+        <div>and I am a passionate</div>
+        <script src="https://unpkg.com/typed.js@3.0.0/dist/typed.umd.js"></script>
+
+        <!-- Element to contain animated typing -->
+        <span id="element"></span>
+
+        <!-- Load library from the CDN -->
+        <script src="https://unpkg.com/typed.js@3.0.0/dist/typed.umd.js"></script>
+
+        <!-- Setup and start animation! -->
+        <script>
+          var typed = new Typed('#element', {
+            strings: ['Front End Developer'],
+            typeSpeed: 50,
+          });
+        </script>
+        <button class="btn-resume">Download Resume</button>
+</body>
+</div>
+
+</div>
+<div class="rightSection">
+  <img src="background.png" alt="Image">
+</div>
+</section>
+<hr>
+
+<section class="SecondSection">
+  <span class="text-gray">What I have done so far</span>
+  <h2>Work Experience</h2>
+  <div class="box">
+    <div class="vertical">
+      <img class="vertical-img" src="html_logo.png" alt="Image">
+      <div class="vertical-title">HTML</div>
+      <div class="vertical-desc">Built structured, SEO-optimized pages for client projects
+      </div>
+    </div>
+    <div class="vertical">
+      <img class="vertical-img" src="css_logo.png" alt="Image">
+      <div class="vertical-title">CSS</div>
+      <div class="vertical-desc">Designed responsive interfaces matching Figma mockups pixel-perfect
+      </div>
+    </div>
+    <div class="vertical">
+      <img class="vertical-img" src="Js_logo.png" alt="Image">
+      <div class="vertical-title">Java Script</div>
+      <div class="vertical-desc">Implemented real-time features like forms, filters, and dashboards
+
+      </div>
+    </div>
+    <div class="vertical"><img class="vertical-img" src="react_logo.png" alt="Image">
+      <div class="vertical-title">React</div>
+      <div class="vertical-desc">Developed reusable component libraries reducing development time by 30%
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<footer class="footer">
+  <div class="left-footer">Muneeb Developer</div>
+  <div class="center-footer">
+    <ul>
+      <li>Home</li>
+      <li>Contact</li>
+      <li>Services</li>
+    </ul>
+  </div>
+  <div class="rights">
+    @2026 Protected by reserved rights
+  </div>
+</footer>
+
+</main>
+</body>
+
+</html>

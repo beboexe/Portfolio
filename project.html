@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Projects</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: "Poppins", sans-serif;
+      background-color: rgb(5, 22, 78);
+      color: white;
+      min-height: 100vh;
+
+    }
+
+    .projects {
+      max-width: 90vw;
+      margin: auto;
+      padding: 40px 0;
+      text-align: center;
+    }
+
+    .projects h2 {
+      font-size: 2rem;
+      margin-bottom: 20px;
+      color: rgb(178, 111, 240);
+    }
+
+    .project-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 2rem;
+    }
+
+    .project-card {
+      background: rgb(11, 8, 54);
+      color: white;
+      border-radius: 8px;
+      padding: 20px;
+      transition: transform 0.3s;
+    }
+
+    .project-card:hover {
+      transform: translateY(-5px);
+    }
+
+    .project-card img {
+      width: 100%;
+      height: 150px;
+      object-fit: cover;
+      border-radius: 5px;
+    }
+
+    .project-card h3 {
+      margin-top: 15px;
+      font-size: 1.2rem;
+    }
+
+    .project-card p {
+      font-size: 0.9rem;
+      color: gray;
+      margin-top: 10px;
+    }
+  </style>
+</head>
+
+<body>
+  <section class="projects">
+    <h2>My Projects</h2>
+    <div class="project-grid">
+      <div class="project-card">
+        <!-- <img src="netflix_clone.png" alt="Netflix Clone"> -->
+        <h3>Netflix Clone</h3>
+        <p>Responsive UI with movie browsing features.</p>
+      </div>
+
+      <div class="project-card">
+        <!-- <img src="spotify_clone.png" alt="Spotify Clone"> -->
+        <h3>Spotify Clone</h3>
+        <p>Music player interface with playlist design.</p>
+      </div>
+
+      <div class="project-card">
+        <!-- <img src="digital_clock.png" alt="Digital Clock"> -->
+        <h3>Digital Clock</h3>
+        <p>Real-time clock built with JavaScript.</p>
+      </div>
+
+      <div class="project-card">
+        <!-- <img src="bmi_calculator.png" alt="BMI Calculator"> -->
+        <h3>BMI Calculator</h3>
+        <p>Health utility app for BMI calculation.</p>
+      </div>
+
+      <div class="project-card">
+        <!-- <img src="joke_maker.png" alt="Joke Maker"> -->
+        <h3>Joke Maker</h3>
+        <p>Generates random jokes using APIs.</p>
+      </div>
+
+      <div class="project-card">
+        <!-- <img src="weather_app.png" alt="Weather App"> -->
+        <h3>Weather App</h3>
+        <p>Displays live weather data by city.</p>
+      </div>
+
+      <div class="project-card">
+        <!-- <img src="text_utils.png" alt="Text Utils"> -->
+        <h3>Text Utils</h3>
+        <p>Text manipulation tools (uppercase, count, etc.).</p>
+      </div>
+    </div>
+  </section>
+
+</body>
+
+</html>
