@@ -5,48 +5,51 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Muneeb | Portfolio Website</title>
+  <link rel="icon" type="image/png" href="titleicon.png">
   <link rel="stylesheet" href="main.css">
+
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link
     href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
     rel="stylesheet">
+
 </head>
 
 <body>
-<header>
-  <script>
-    function openNav() {
-  document.getElementById("mySidebar").style.width = "250px";
-}
+  <header>
+    <script>
+      function openNav() {
+        document.getElementById("mySidebar").style.width = "250px";
+      }
 
-function closeNav() {
-  document.getElementById("mySidebar").style.width = "0";
-}
+      function closeNav() {
+        document.getElementById("mySidebar").style.width = "0";
+      }
 
-  </script>
-  <nav class="navbar">
-    <div class="left">Muneeb's Portfolio</div>
-    <div class="right">
-      <button class="openbtn" onclick="openNav()">☰</button>
-      <ul>
-        <li><a href="#home">Home</a></li>
-        <li><a href="about.html">About</a></li>
-        <li><a href="project.html">Projects</a></li>
-        <li><a href="Contact.html">Contact</a></li>
-      </ul>
-    </div>
-  </nav>
-</header>
+    </script>
+    <nav class="navbar">
+      <div class="left">Muneeb's Portfolio</div>
+      <div class="right">
+        <button class="openbtn" onclick="openNav()">☰</button>
+        <ul>
+          <li><a href="#home">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="project.html">Projects</a></li>
+          <li><a href="Contact.html">Contact</a></li>
+        </ul>
+      </div>
+    </nav>
+  </header>
 
-<!-- Sidebar -->
-<div id="mySidebar" class="sidebar">
-  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">×</a>
-  <a href="#home">Home</a>
-  <a href="about.html">About</a>
-  <a href="#projects">Projects</a>
-  <a href="#contact">Contact</a>
-</div>
+  <!-- Sidebar -->
+  <div id="mySidebar" class="sidebar">
+    <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">×</a>
+    <a href="#home">Home</a>
+    <a href="about.html">About</a>
+    <a href="#projects">Projects</a>
+    <a href="#contact">Contact</a>
+  </div>
 
 
   <main>
@@ -58,19 +61,12 @@ function closeNav() {
 
         <!-- Element to contain animated typing -->
         <span id="element"></span>
-
+        <div></div>
         <!-- Load library from the CDN -->
-        <script src="https://unpkg.com/typed.js@3.0.0/dist/typed.umd.js"></script>
 
-        <!-- Setup and start animation! -->
-        <script>
-          var typed = new Typed('#element', {
-            strings: ['Front End Developer'],
-            typeSpeed: 50,
-          });
-        </script>
-        <button class="btn-resume">Download Resume</button>
+        <a class="btn-resume" href="resume.pdf">Download Reume</a>
 </body>
+
 </div>
 
 </div>
@@ -78,6 +74,15 @@ function closeNav() {
   <img src="background.png" alt="Image">
 </div>
 </section>
+<script src="https://unpkg.com/typed.js@3.0.0/dist/typed.umd.js"></script>
+
+<!-- Setup and start animation! -->
+<script>
+  var typed = new Typed('#element', {
+    strings: ['Front End Developer'],
+    typeSpeed: 50,
+  });
+</script>
 <hr>
 
 <section class="SecondSection">
@@ -112,13 +117,100 @@ function closeNav() {
   </div>
 </section>
 
+<hr>
+
+<section class="projects">
+  <h2>My Projects</h2>
+  <div class="project-grid">
+    <div class="project-card">
+      <img src="netflix.png" alt="Netflix Clone">
+      <h3>Netflix Clone</h3>
+      <p>Responsive UI with movie browsing features.</p>
+    </div>
+
+    <div class="project-card">
+      <img src="spotify.png" alt="Spotify Clone">
+      <h3>Spotify Clone</h3>
+      <p>Music player interface with playlist design.</p>
+    </div>
+
+    <div class="project-card">
+      <img src="digital_clock.png" alt="Digital Clock">
+      <h3>Digital Clock</h3>
+      <p>Real-time clock built with JavaScript.</p>
+    </div>
+
+    <div class="project-card">
+      <img src="bmi.png" alt="BMI Calculator">
+      <h3>BMI Calculator</h3>
+      <p>Health utility app for BMI calculation.</p>
+    </div>
+
+    <div class="project-card">
+      <img src="joke_maker.png" alt="Joke Maker">
+      <h3>Joke Maker</h3>
+      <p>Generates random jokes using APIs.</p>
+    </div>
+
+    <div class="project-card">
+      <img src="news_app.png" alt="Weather App">
+      <h3>News App</h3>
+      <p>Displays live news data by city.</p>
+    </div>
+
+    <div class="project-card">
+      <img src="textutilts.png" alt="Text Utils">
+      <h3>Text Utils</h3>
+      <p>Text manipulation tools (uppercase, count, etc.).</p>
+    </div>
+  </div>
+</section>
+<hr>
+
+<section id="about" class="about">
+  <h1>About Me</h1>
+  <div class="about-container">
+    <!-- <img src="Muneeb.jpg" alt="Muneeb photo" class="about-img"> -->
+    <div class="about-text">
+      <p>
+        Hi, I’m <strong>Muneeb</strong>, a passionate front‑end web developer from Punjab, Pakistan.
+        I enjoy building modern, responsive websites using <strong>HTML, CSS, and JavaScript</strong>.
+      </p>
+      <p>
+        My journey started with small projects like a <em>Netflix Clone</em>, a <em>To‑Do List App</em>,
+        and a <em>Joke Maker</em> using APIs. These projects helped me strengthen my understanding of
+        the DOM, async/await, and the Fetch API.
+      </p>
+      <p>
+        My goal is to join a creative <strong>software house</strong> where I can grow as a developer,
+        contribute to real‑world projects, and eventually expand my skills into frameworks like <strong>React</strong>.
+      </p>
+      <p>
+        Outside of coding, I love learning new design techniques, experimenting with UI layouts,
+        and exploring how technology can solve everyday problems.
+      </p>
+    </div>
+  </div>
+</section>
+<hr>
+
+<!-- Contact portion -->
+
+<section class="contact">
+  <h1>Contact ME</h1>
+  <form id="contactForm" action="https://formspree.io/f/xykqqygd" method="POST">
+    <textarea class="input-box" name="message" placeholder="Enter your message" rows="6" cols="50"></textarea>
+    <button class="send-msg" type="submit">Send Message</button>
+  </form>
+</section>
+<script src="script.js"></script>
+
 <footer class="footer">
   <div class="left-footer">Muneeb Developer</div>
   <div class="center-footer">
     <ul>
-      <li>Home</li>
-      <li>Contact</li>
-      <li>Services</li>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="Contact.html">Contact</a></li>
     </ul>
   </div>
   <div class="rights">

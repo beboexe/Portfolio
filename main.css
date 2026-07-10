@@ -4,8 +4,8 @@ body {
   background-color: rgb(5, 22, 78);
   color: white;
   min-height: 100vh;
-  display: flex;
-  flex-direction: column;
+  /* display: flex; */
+  /* flex-direction: column; */
 }
 
 /* Navbar */
@@ -71,7 +71,7 @@ body {
   color: white;
 }
 
-/* Hamburger button */
+
 .openbtn {
   font-size: 1.5rem;
   cursor: pointer;
@@ -79,7 +79,8 @@ body {
   color: white;
   border: none;
   padding: 5px 10px;
-  display: none; /* hidden on desktop */
+  display: none; 
+
 }
 
 /* Show hamburger only on small screens */
@@ -114,6 +115,7 @@ body {
   width: 30%;
   font-size: 2rem;
   padding: 10px;
+
 }
 .btn-resume {
   background-color: rgb(105, 23, 156);
@@ -123,7 +125,15 @@ body {
   font-size: 1rem;
   cursor: pointer;
   border-radius: 5px;
+  text-decoration: none;
+
 }
+
+.btn-resume:hover {
+  background-color: #2980b9;
+}
+
+
 .rightSection {
   width: 30%;
 }
@@ -236,7 +246,7 @@ hr {
 }
 
 /* Responsive */
-@media (max-width: 992px) {
+@media (max-width: 650px) {
   .navbar {
     flex-direction: column;
     height: auto;
@@ -270,4 +280,166 @@ hr {
     flex-direction: column;
     gap: 1rem;
   }
+}
+
+
+
+
+    .projects {
+      max-width: 90vw;
+      margin: auto;
+      padding: 40px 0;
+      text-align: center;
+    }
+
+    .projects h2 {
+      font-size: 2rem;
+      margin-bottom: 20px;
+      color: rgb(178, 111, 240);
+    }
+
+    .project-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 2rem;
+    }
+
+    .project-card {
+      background: rgb(11, 8, 54);
+      color: white;
+      border-radius: 8px;
+      padding: 20px;
+      transition: transform 0.3s;
+    }
+
+    .project-card:hover {
+      transform: translateY(-5px);
+    }
+
+    .project-card img {
+      width: 100%;
+      height: 150px;
+      object-fit: cover;
+      border-radius: 5px;
+    }
+
+    .project-card h3 {
+      margin-top: 15px;
+      font-size: 1.2rem;
+    }
+
+    .project-card p {
+      font-size: 0.9rem;
+      color: gray;
+      margin-top: 10px;
+    }
+
+    .about {
+  padding: 60px 80px;
+}
+
+.about-container {
+  display: flex;
+  align-items: center;
+  font-size: 20px;
+  gap: 40px;
+}
+
+body{
+  
+  color:white;
+  background-color:rgb(5, 22, 78);
+  font-family:"poppins", sans-serif;
+}
+
+.about-text {
+  max-width: 600px;
+  line-height: 1.6;
+}
+
+/* Tablet screens */
+@media (max-width: 992px) {
+  .about {
+    padding: 40px 50px;
+  }
+
+  .about-container {
+    flex-direction: column;
+    text-align: center;
+    font-size: 18px;
+    gap: 20px;
+  }
+
+  .about-text {
+    max-width: 100%;
+  }
+}
+
+/* Mobile screens */
+@media (max-width: 576px) {
+  .about {
+    padding: 20px;
+  }
+
+  .about-container {
+    font-size: 16px;
+    gap: 15px;
+  }
+
+  .about-text {
+    line-height: 1.4;
+  }
+}
+
+
+.contact  {
+  min-height: 80vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;     
+  padding: 40px 20px;
+  gap: 30px;             
+  margin: 10px;
+}
+
+.contact h1 {
+  margin: 0;
+  text-align: center;
+}
+
+.contact .input-box {
+  width: 80vw;
+  max-width: 800px;            
+  height: 40vh;
+  min-height: 200px;
+  border-radius: 17px;
+  padding: 15px;
+  font-size: 16px;
+  line-height: 1.5;
+  resize: none;
+  box-sizing: border-box;
+  border: 2px solid #ccc;
+}
+
+.send-msg {
+  background-color: rgb(151, 7, 151);
+  color: white;
+  font-size: 20px;
+  padding: 12px 30px;
+  border-radius: 10px;
+  border: 1px solid white;
+  cursor: pointer;
+  align-self: flex-end;       
+  margin-right: 20%;           
+  transition: background-color 0.3s;
+}
+
+.send-msg:hover {
+  background-color: rgb(120, 5, 120);
+  border:2px solid white;
+}
+
+#contactForm{
+  display: contents;
 }
